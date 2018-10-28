@@ -96,7 +96,7 @@ namespace GlazerCalculation_DayanaCarranza
 
             txtWoodLength.Text = woodLength.ToString();
             glazer.Color = this.getColor();
-            //ComboBox
+            
             
         }
 
