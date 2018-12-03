@@ -8,47 +8,39 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid HorizontalAlignment="Left" Margin="184,2,0,2" Padding="7,0,7,7" FlowDirection="LeftToRight" VerticalAlignment="Stretch" Width="670" RenderTransformOrigin="0.522,0.486">
-        <TextBlock HorizontalAlignment="Left" Margin="176,130,0,0" Text="Height" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="49"/>
-        <TextBlock HorizontalAlignment="Left" Margin="179,75,0,0" Text="Width" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="50"/>
-        <TextBlock HorizontalAlignment="Left" Margin="156,205,0,0" Text="Tint Color" TextWrapping="Wrap" VerticalAlignment="Top" Height="73" Width="99"/>
-        <TextBlock HorizontalAlignment="Left" Margin="163,273,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="102" RenderTransformOrigin="0.422,0.711"/>
-        <TextBlock HorizontalAlignment="Left" Margin="126,420,0,0" Text="Length of Wood" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" RenderTransformOrigin="0.956,0.351" Width="112"/>
-        <TextBlock HorizontalAlignment="Left" Margin="144,492,0,0" Text="Area of Glass" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.818,0.769" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="28" Width="91">
+    <Grid HorizontalAlignment="Left" Margin="184,2,0,2" Padding="7,0,7,7" FlowDirection="LeftToRight" VerticalAlignment="Stretch" Width="670">
+        <TextBlock HorizontalAlignment="Left" Margin="129,157,0,0" Text="Height" TextWrapping="Wrap" VerticalAlignment="Top" Height="113" Width="147"/>
+        <TextBlock HorizontalAlignment="Left" Margin="136,91,0,0" Text="Width" TextWrapping="Wrap" VerticalAlignment="Top" Height="108" Width="126"/>
+        <TextBlock HorizontalAlignment="Left" Margin="129,228,0,0" Text="Tint Color" TextWrapping="Wrap" VerticalAlignment="Top" Height="73" Width="99"/>
+        <TextBlock HorizontalAlignment="Left" Margin="136,298,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="102" RenderTransformOrigin="0.422,0.711"/>
+        <TextBlock HorizontalAlignment="Left" Margin="122,459,0,0" Text="Length of Wood" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" RenderTransformOrigin="0.956,0.351"/>
+        <TextBlock HorizontalAlignment="Left" Margin="123,524,0,0" Text="Area of Glass" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.818,0.769" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="46" Width="129">
             <TextBlock.RenderTransform>
-                <CompositeTransform Rotation="-1.039" TranslateX="-0.188" TranslateY="0.605"/>
+                <CompositeTransform Rotation="0.849" TranslateX="-0.188" TranslateY="0.605"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBox x:Name="txtWidthSize" HorizontalAlignment="Left" Margin="290,65,0,0" Text="" VerticalAlignment="Top" Height="40" Width="117" RequestedTheme="Default" TextChanged="WidthBox_TextChanged" RenderTransformOrigin="0.403,-4.583"/>
-        <TextBox x:Name="txtHeightSize" Margin="298,122,258,0" Text="" VerticalAlignment="Top" Height="40" TextChanged="HeightBox_TextChanged" RenderTransformOrigin="0.579,-3.698" UseLayoutRounding="False" d:LayoutRounding="Auto" HorizontalAlignment="Stretch">
-            <TextBox.RenderTransform>
-                <CompositeTransform Rotation="-0.029"/>
-            </TextBox.RenderTransform>
-        </TextBox>
-        <ComboBox x:Name="TintColor" HorizontalAlignment="Right" Margin="0,198,248,0" VerticalAlignment="Top" Height="34" RenderTransformOrigin="0.008,0.482" UseLayoutRounding="False" d:LayoutRounding="Auto" SelectionChanged="ColorComboBox_SelectionChanged" Width="120">
+        <TextBox x:Name="txtWidthSize" HorizontalAlignment="Left" Margin="281,91,0,0" Text="" VerticalAlignment="Top" Height="40" Width="133" RequestedTheme="Default" TextChanged="WidthBox_TextChanged" RenderTransformOrigin="0.403,-4.583"/>
+        <TextBox x:Name="txtHeightSize" HorizontalAlignment="Left" Margin="288,157,0,0" Text="" VerticalAlignment="Top" Height="40" Width="133" TextChanged="HeightBox_TextChanged" RenderTransformOrigin="0.579,-3.698"/>
+        <ComboBox x:Name="TintColor" HorizontalAlignment="Left" Margin="439,223,0,0" VerticalAlignment="Top" Height="40" RenderTransformOrigin="0.008,0.482" Width="133" UseLayoutRounding="False" d:LayoutRounding="Auto" SelectionChanged="ColorComboBox_SelectionChanged">
             <ComboBox.RenderTransform>
-                <CompositeTransform ScaleY="1" Rotation="0" TranslateX="-0.003" TranslateY="0.721"/>
+                <CompositeTransform ScaleY="-1" Rotation="179.444" TranslateX="-0.003" TranslateY="0.721"/>
             </ComboBox.RenderTransform>
             <ComboBoxItem Content=" Black" Background="Black" Foreground="White" UseLayoutRounding="True"></ComboBoxItem>
             <ComboBoxItem Content=" Brown" Background="Brown" Foreground="White"></ComboBoxItem>
             <ComboBoxItem Content=" Blue" Background="Blue" Foreground="White"></ComboBoxItem>
         </ComboBox>
-        <Slider x:Name="sldQuantity" HorizontalAlignment="Left" Margin="279,264,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.136,-2.049" UseLayoutRounding="False" Width="137" d:LayoutRounding="Auto" ValueChanged="Slider_ValueChanged">
+        <Slider x:Name="sldQuantity" HorizontalAlignment="Left" Margin="336,298,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.136,-2.049" UseLayoutRounding="False" Width="97" d:LayoutRounding="Auto" ValueChanged="Slider_ValueChanged">
             <Slider.RenderTransform>
                 <CompositeTransform Rotation="-0.433" TranslateX="-0.844" TranslateY="0.47"/>
             </Slider.RenderTransform>
         </Slider>
-        <TextBox x:Name="txtWoodLength" HorizontalAlignment="Left" Margin="281,412,0,0" Text="" RenderTransformOrigin="-0.89,-0.958" Width="133" IsEnabled="False" Height="40" VerticalAlignment="Top" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <TextBox x:Name="txtWoodLength" HorizontalAlignment="Left" Margin="331,446,0,0" Text="" RenderTransformOrigin="-0.89,-0.958" Width="133" IsEnabled="False" Height="40" VerticalAlignment="Top" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <TextBox.RenderTransform>
-                <CompositeTransform Rotation="-0.297"/>
+                <CompositeTransform Rotation="0.593"/>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="txtAreaGlass" HorizontalAlignment="Left" Margin="282,486,0,0" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.514,-0.104" Height="40" Width="133" IsEnabled="False" UseLayoutRounding="False" d:LayoutRounding="Auto">
-            <TextBox.RenderTransform>
-                <CompositeTransform Rotation="-0.932"/>
-            </TextBox.RenderTransform>
-        </TextBox>
-        <Button x:Name="CalculateTb" Content="Calculate" HorizontalAlignment="Left" Margin="282,328,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.062,0.5" Click="submitButton_Click" Width="133" Height="40"/>
+        <TextBox x:Name="txtAreaGlass" HorizontalAlignment="Left" Margin="335,529,0,0" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.514,-0.104" Height="40" Width="133" IsEnabled="False"/>
+        <Button x:Name="CalculateTb" Content="Calculate" HorizontalAlignment="Left" Margin="202,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.062,0.5" Click="submitButton_Click" Width="133" Height="40"/>
         <TextBlock x:Name="txtQuantity" HorizontalAlignment="Left" Margin="485,302,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
     </Grid>
